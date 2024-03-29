@@ -1,0 +1,114 @@
+html
+ {
+  overflow-x: hidden;
+ }
+
+  .info
+  {
+  width: 63vw;
+  padding: 10px;
+  margin: 0px 50px 0px;
+  height: 150px;
+  overflow-y: scroll;
+  }
+  .buttonBox
+  {
+  position: absolute;
+  top: 140px;
+  right: 2%;
+  left: 73%;
+  }
+  .buttonContainer
+  {
+  
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 18px;
+    row-gap: 30px;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+  }
+  .buttonContainer::-webkit-scrollbar 
+  {
+    width: 2px;
+  }
+  .buttonContainer::-webkit-scrollbar-thumb 
+  {
+    background-color: #555;
+  }
+
+  .epButton
+  {
+    width: 60px; 
+    padding: 15px 25px;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #181818;
+  }
+ .epButton:hover
+  {
+    background-color: rgb(225, 225, 225);
+  }
+  .epButton.selected 
+  {
+    color: green;
+  }
+  .show 
+  {
+    border: none;        
+    color: green;   
+    cursor: pointer;
+    margin-left: 0px;
+  }
+.show:hover
+{
+  text-decoration: underline; 
+}
+.desandshow
+{
+  display: flex;
+}
+
+@media screen and (max-width:767px)
+  {
+    .buttonBox
+    {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-right:10px;
+    }
+    .buttonContainer
+  {
+  
+    display: grid;
+    grid-template-columns: repeat(5, 70px);
+    gap: 1px;
+    row-gap: 30px;
+    height: 115px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+  }
+  .info
+  {
+  width: 98%;
+  padding: 2px;
+  height: 140px;
+  margin: 90px 0px 0px;
+  overflow-y: scroll;
+  }
+  .epButton
+  {
+    width: 60px; 
+    padding: 10px 22px;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  }

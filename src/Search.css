@@ -1,0 +1,134 @@
+
+html
+{
+  overflow-x: hidden;
+}
+  
+  .nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 65px;
+    align-items: center;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    z-index: 2;
+    gap: 56px;
+}
+
+  .minazuki
+  {
+    font-family: cursive;
+    font-size: 23px;
+    margin-left: 6vw;
+    color: green;
+  }
+  .searchContainer 
+  {
+    position: relative;
+  }
+  .searchBar
+  {
+    background-color: white;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: grey;
+    border-style: solid;
+    width: 47.5vw;
+    height:40px;
+    padding: 0px 18px; 
+    box-sizing: border-box;
+    outline: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+  }
+  .searchBar:focus
+  {
+    border-color: green;
+  }
+  .searchBarIcon
+  {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+    right: 10px;
+    top: 10px;
+  }
+  .searchBarLine
+  {
+    position: absolute;
+    margin-right: 10px;
+    right: 50px;
+    font-size: 25px;
+    top: 0px;
+    color: rgb(225, 225, 225);
+  }
+  .searchResultsIcon
+  {
+    width: 30px;
+    height: 20px;
+    color: rgb(225, 225, 225);
+    margin-right: 10px;
+  }
+  .searchResults
+  {
+  position: absolute;
+  height: auto;
+  max-height: 300px;
+  overflow-y: scroll;
+  width: 47vw;
+  border: 1px solid grey;
+  border-radius: 10px;
+  top: 50px;
+  background-color: rgb(255, 255, 255);
+
+  }
+  .searchResults::-webkit-scrollbar 
+  {
+    width: 2px;
+  }
+  .searchResults::-webkit-scrollbar-thumb 
+  {
+    background-color: #555;
+  }
+  .searchResults::-webkit-scrollbar-button
+  {
+    width: 1px;
+  }
+  .resultItem
+  {
+    display: block;
+    color: #555;
+    padding: 10px; 
+    text-decoration: none;
+  }
+  .noResultItem
+  {
+    padding: 10px; 
+  }
+  .resultItem:hover
+  {
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width:767px)
+  {
+    .nav
+    {
+      gap: 50px;
+      height: 58px;
+    }
+    .searchBarLine
+   {
+    position: absolute;
+    margin-right: 10px;
+    right: 45px;
+    font-size: 25px;
+    top: 3px;
+    color: rgb(225, 225, 225);
+   }
+  }

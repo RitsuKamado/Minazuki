@@ -1,0 +1,72 @@
+.error {
+    text-align: center;
+    padding: 50px; 
+    margin: 0% auto; 
+    max-width: 50%; 
+    border-radius: 20px;
+  }
+  
+  .error h2 {
+    margin-bottom: 20px; 
+    font-size: 32px;
+  }
+  
+  .error p {
+    line-height: 1.8; 
+    font-size: 18px;
+  }
+  
+  .error img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px; 
+  }
+  .not-found-text i
+  {
+    font-style: italic;
+    color: green;
+  }
+  .not-found-text i1
+  {
+    font-style: italic;
+    color: red;
+  }
+  .nav {
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 65px;
+    align-items: center;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    z-index: 2;
+    gap: 56px;
+  }
+  .minazuki
+  {
+    font-family: cursive;
+    font-size: 23px;
+    margin-left: 6vw;
+    color: green;
+  }
+  
+  @media screen and (max-width:767px)
+    {
+      .error {
+        text-align: left;
+        padding: 10px; 
+        margin: 3% auto; 
+        max-width: 100%; 
+        border-radius: 20px;
+      }
+        .nav
+        {
+          gap: 50px;
+          height: 58px;
+        }
+        html
+  {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+    }
