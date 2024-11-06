@@ -1,0 +1,38 @@
+
+.link
+{
+    display: flex;
+    gap: 20px;
+}
+.anime, .movie, .drama
+{
+    text-align: center;
+    text-decoration: none;
+    color: black;/* Dark text color */
+    transition: color 0.3s ease; 
+    padding: 6px;
+    width: 60px;
+}
+.anime:hover 
+{
+    color: green; /* Change color on hover */
+
+}
+  
+  .anime.active, .movie.active, .drama.active
+{
+    color: green;
+    border-bottom: solid green 5px;
+}
+
+@media screen and (max-width:767px)
+{
+    .link
+    {
+        display: none;
+    }
+    
+}
+
+
+ 

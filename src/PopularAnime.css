@@ -1,0 +1,49 @@
+html
+{
+    overflow-x: hidden;
+}
+.PopularAnime
+{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns:  repeat(5, 270px);
+    overflow-x: hidden;
+
+}
+.PopularAnime a 
+{
+    text-decoration: none; 
+    color: black;
+    list-style: none;
+}
+.PopularAnime a:hover
+{
+    color: green;
+    font-weight: bold;
+}
+img
+{
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+}
+.trending
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:767px)
+{
+    .PopularAnime
+    {
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns:  repeat(3, 32vw);
+    }
+    img
+    {
+        width: 100px;
+        height: 150px;
+    }
+}
