@@ -1,6 +1,7 @@
 {
   "short_name": "Minazuki",
   "name": "Minazuki",
+  "description": "Minazuki is an anime streaming and discovery web app where users can search, watch, and explore popular anime series and movies with a clean, responsive interface.",
   "icons": [
     {
       "src": "moon.png",
@@ -16,6 +17,26 @@
       "src": "moon.png",
       "type": "image/png",
       "sizes": "512x512"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-home.png",
+      "sizes": "ss3",
+      "type": "image/png",
+      "label": "Home Page — Featured anime and categories"
+    },
+    {
+      "src": "ss2",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Search Page — Browse and find anime by title"
+    },
+    {
+      "src": "ss1",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Streaming Page — Episode list and synopsis"
     }
   ],
   "start_url": ".",
